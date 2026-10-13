@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ATS Resume Analyzer & Career Guidance System</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- Font Awesome Icons for professional UI elements -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- Header Navigation -->
+    <header class="navbar">
+        <div class="nav-container">
+            <a href="#hero" class="nav-brand">
+                <span class="brand-icon"><i class="fa-solid fa-file-shield"></i></span>
+                <span class="brand-text">ATS<strong>Insight</strong></span>
+            </a>
+            <nav class="nav-links">
+                <a href="#hero"><i class="fa-solid fa-house"></i> Home</a>
+                <a href="#how-it-works"><i class="fa-solid fa-circle-nodes"></i> How It Works</a>
+                <a href="#features"><i class="fa-solid fa-sparkles"></i> Features</a>
+                <a href="#analyzer" class="nav-cta-btn"><i class="fa-solid fa-upload"></i> Analyze Resume</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Landing Section -->
+    <section id="hero" class="hero-section">
+        <div class="hero-container">
+            <div class="hero-badge">
+                <i class="fa-solid fa-graduation-cap"></i> Built for Students & Internship Aspirants
+            </div>
+            <h1 class="hero-title">
+                ATS-Friendly Resume Analyzer <br>
+                <span>& Career Guidance System</span>
+            </h1>
+            <p class="hero-subtitle">
+                Optimize your resume for automated screening systems. Uncover skill gaps, test ATS formatting compliance, and receive verified certification and portfolio project recommendations tailored to your dream tech role.
+            </p>
+            <div class="hero-actions">
+                <a href="#analyzer" class="btn btn-primary btn-lg">
+                    <i class="fa-solid fa-magnifying-glass-chart"></i> Analyze My Resume
+                </a>
+                <a href="#how-it-works" class="btn btn-outline btn-lg">
+                    <i class="fa-solid fa-circle-info"></i> How It Works
+                </a>
+            </div>
+            <div class="hero-stats">
+                <div class="stat-item">
+                    <span class="stat-number">100%</span>
+                    <span class="stat-label">Transparent Rule-Based Scoring</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat-item">
+                    <span class="stat-number">6+</span>
+                    <span class="stat-label">Tech Roles & Custom Matching</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat-item">
+                    <span class="stat-number">Instant</span>
+                    <span class="stat-label">PDF & Career Action Plan</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section id="how-it-works" class="section bg-light">
+        <div class="section-container">
+            <div class="section-header text-center">
+                <span class="section-tag">Simple & Transparent Process</span>
+                <h2 class="section-title">How ATSInsight Works</h2>
+                <p class="section-desc">From PDF parsing to actionable career guidance in four straightforward steps.</p>
+            </div>
+            <div class="steps-grid">
+                <div class="step-card">
+                    <div class="step-icon">
+                        <i class="fa-solid fa-file-arrow-up"></i>
+                        <span class="step-number">1</span>
+                    </div>
+                    <h3>1. Upload Resume</h3>
+                    <p>Upload your resume in PDF format. We safely extract digital text using Apache PDFBox without permanent storage.</p>
+                </div>
+                <div class="step-card">
+                    <div class="step-icon">
+                        <i class="fa-solid fa-bullseye"></i>
+                        <span class="step-number">2</span>
+                    </div>
+                    <h3>2. Choose Target Role</h3>
+                    <p>Select your intended role (Java Developer, Full Stack, Data Analyst, etc.) or optionally paste a job description.</p>
+                </div>
+                <div class="step-card">
+                    <div class="step-icon">
+                        <i class="fa-solid fa-list-check"></i>
+                        <span class="step-number">3</span>
+                    </div>
+                    <h3>3. ATS & Skill Evaluation</h3>
+                    <p>The system audits 9 critical ATS formatting benchmarks and compares your detected competencies against role benchmarks.</p>
+                </div>
+                <div class="step-card">
+                    <div class="step-icon">
+                        <i class="fa-solid fa-compass-drafting"></i>
+                        <span class="step-number">4</span>
+                    </div>
+                    <h3>4. Career Guidance</h3>
+                    <p>Review dual scores, identify missing skills, explore verified course certifications, and download your analysis report.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Key Features Section -->
+    <section id="features" class="section">
+        <div class="section-container">
+            <div class="section-header text-center">
+                <span class="section-tag">Key Capabilities</span>
+                <h2 class="section-title">Everything You Need To Stand Out</h2>
+                <p class="section-desc">Designed with industry-standard resume best practices and student career advancement in mind.</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon bg-indigo"><i class="fa-solid fa-binary"></i></div>
+                    <h3>Apache PDFBox Extraction</h3>
+                    <p>Extracts text, headers, and contact information accurately while detecting unreadable scanned image PDFs gracefully.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon bg-emerald"><i class="fa-solid fa-shield-halved"></i></div>
+                    <h3>9-Point ATS Compatibility Audit</h3>
+                    <p>Transparent checklist grading text extractability, contact availability, section headers, word volume, and character layout.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon bg-amber"><i class="fa-solid fa-sliders"></i></div>
+                    <h3>Dual Transparent Scoring</h3>
+                    <p>Separate 100-point scores for ATS formatting compatibility and Role Suitability (Skills 50 pts, Projects 30 pts, Qualifications 20 pts).</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon bg-rose"><i class="fa-solid fa-chart-pie"></i></div>
+                    <h3>Skill Gap Identification</h3>
+                    <p>Clear classification of matched skills and competencies not detected in your resume, avoiding inaccurate assumptions.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon bg-cyan"><i class="fa-solid fa-certificate"></i></div>
+                    <h3>Authentic Certifications</h3>
+                    <p>Verified, official course and certification links (Oracle, Meta, freeCodeCamp, AWS) clearly distinguishing free vs paid exams.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon bg-purple"><i class="fa-solid fa-file-arrow-down"></i></div>
+                    <h3>Downloadable Executive Report</h3>
+                    <p>Generate and download a complete PDF report or plain-text file containing all findings, scores, and recommendations.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Upload & Analyzer Section -->
+    <section id="analyzer" class="section bg-light">
+        <div class="section-container">
+            <div class="analyzer-wrapper">
+                <div class="analyzer-card">
+                    <div class="card-header">
+                        <h2><i class="fa-solid fa-cloud-arrow-up"></i> Upload & Analyze Resume</h2>
+                        <p>Upload your PDF resume to start the rule-based ATS audit and career guidance analysis.</p>
+                    </div>
+
+                    <form id="resumeUploadForm" class="upload-form">
+                        <!-- Dropzone Area -->
+                        <div class="dropzone" id="dropzone">
+                            <input type="file" id="resumeFileInput" accept=".pdf" class="file-input-hidden">
+                            <div class="dropzone-content" id="dropzonePrompt">
+                                <div class="dropzone-icon"><i class="fa-solid fa-file-pdf"></i></div>
+                                <h3>Drag & Drop your resume PDF here</h3>
+                                <p>or <button type="button" class="btn-text" id="browseBtn">browse your computer</button></p>
+                                <span class="file-limits">Supported format: PDF only (Max 5MB)</span>
+                            </div>
+                            <div class="selected-file-info hidden" id="fileInfoBox">
+                                <div class="file-badge"><i class="fa-solid fa-file-lines"></i></div>
+                                <div class="file-details">
+                                    <span class="file-name" id="fileNameLabel">resume.pdf</span>
+                                    <span class="file-size" id="fileSizeLabel">245 KB</span>
+                                </div>
+                                <button type="button" class="btn-remove" id="removeFileBtn" title="Remove file">
+                                    <i class="fa-solid fa-xmark"></i>
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- One-Click Sample Resumes for Quick Testing -->
+                        <div class="sample-actions">
+                            <span class="sample-label"><i class="fa-solid fa-flask"></i> Quick Demo Resumes:</span>
+                            <button type="button" class="btn-sample" id="loadSampleJavaBtn">
+                                <i class="fa-solid fa-check-circle"></i> Try Sample Java Developer Resume
+                            </button>
+                            <button type="button" class="btn-sample" id="loadSampleJuniorBtn">
+                                <i class="fa-solid fa-triangle-exclamation"></i> Try Sample Resume with Gaps
+                            </button>
+                        </div>
+
+                        <!-- Role Selection -->
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="roleSelect"><i class="fa-solid fa-briefcase"></i> Target Job Role *</label>
+                                <select id="roleSelect" class="form-control" required>
+                                    <option value="java-developer" selected>Java Developer</option>
+                                    <option value="frontend-developer">Frontend Developer</option>
+                                    <option value="fullstack-developer">Full Stack Developer</option>
+                                    <option value="python-developer">Python Developer</option>
+                                    <option value="data-analyst">Data Analyst</option>
+                                    <option value="software-engineer">Software Engineer</option>
+                                    <option value="custom">-- Custom Job Role --</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group hidden" id="customRoleGroup">
+                                <label for="customRoleInput"><i class="fa-solid fa-pen-to-square"></i> Enter Custom Job Title *</label>
+                                <input type="text" id="customRoleInput" class="form-control" placeholder="e.g. Backend Go Developer, DevOps Intern">
+                            </div>
+                        </div>
+
+                        <!-- Optional Job Description -->
+                        <div class="form-group">
+                            <div class="label-with-hint">
+                                <label for="jobDescTextarea"><i class="fa-solid fa-file-invoice"></i> Optional Specific Job Description</label>
+                                <span class="hint-text">Paste a job posting to prioritize specific employer requirements</span>
+                            </div>
+                            <textarea id="jobDescTextarea" class="form-control" rows="3" placeholder="Optional: Paste the target job description or requirements list here to cross-check exact keywords..."></textarea>
+                        </div>
+
+                        <!-- Error Banner -->
+                        <div id="uploadErrorBanner" class="alert alert-danger hidden">
+                            <i class="fa-solid fa-circle-exclamation"></i>
+                            <span id="errorMessageText">Error message</span>
+                        </div>
+
+                        <!-- Submit Button -->
+                        <div class="form-submit">
+                            <button type="submit" class="btn btn-primary btn-block btn-lg" id="analyzeSubmitBtn">
+                                <i class="fa-solid fa-magnifying-glass-chart"></i> Analyze Resume Now
+                            </button>
+                        </div>
+                    </form>
+
+                    <!-- Loading Progress Card -->
+                    <div id="loadingCard" class="loading-state hidden">
+                        <div class="spinner"></div>
+                        <h3 id="loadingStatusText">Analyzing your resume...</h3>
+                        <p id="loadingSubtext">Extracting readable text with Apache PDFBox...</p>
+                        <div class="progress-bar-container">
+                            <div class="progress-bar-fill" id="analysisProgressBar"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Results Dashboard Section -->
+    <section id="results" class="section hidden">
+        <div class="section-container">
+
+            <!-- Results Banner Header -->
+            <div class="results-header-card">
+                <div class="results-header-main">
+                    <div class="candidate-meta">
+                        <span class="role-pill" id="resTargetRolePill">Java Developer</span>
+                        <h2 id="resCandidateName">Rahul Sharma</h2>
+                        <div class="meta-row">
+                            <span><i class="fa-solid fa-file-pdf"></i> <strong id="resFileName">resume.pdf</strong></span>
+                            <span><i class="fa-solid fa-file-lines"></i> <span id="resWordCount">256</span> words</span>
+                            <span><i class="fa-solid fa-layer-group"></i> <span id="resPageCount">1</span> page(s)</span>
+                            <span><i class="fa-regular fa-clock"></i> <span id="resTimestamp">2026-10-13</span></span>
+                        </div>
+                    </div>
+                    <div class="results-header-actions">
+                        <button class="btn btn-success" id="downloadPdfReportBtn">
+                            <i class="fa-solid fa-file-pdf"></i> Download PDF Report
+                        </button>
+                        <button class="btn btn-outline" id="downloadTextReportBtn">
+                            <i class="fa-solid fa-download"></i> Download Text Report
+                        </button>
+                        <button class="btn btn-secondary" id="analyzeAnotherBtn">
+                            <i class="fa-solid fa-arrow-rotate-left"></i> Analyze Another Resume
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Scanned Warning if detected -->
+                <div id="scannedWarningBox" class="alert alert-warning hidden">
+                    <i class="fa-solid fa-triangle-exclamation"></i>
+                    <div>
+                        <strong>Image-based / Scanned PDF Notice:</strong> Text extraction volume was very low. The resume may be an image scan. OCR is not supported in this version.
+                    </div>
+                </div>
+
+                <!-- Transparent Score Cards Grid -->
+                <div class="score-cards-grid">
+                    <!-- Card 1: ATS Compatibility -->
+                    <div class="score-card">
+                        <div class="score-card-header">
+                            <div>
+                                <h3>ATS Compatibility</h3>
+                                <p>Automated Parsing & Structure</p>
+                            </div>
+                            <span class="score-badge-status" id="atsStatusBadge">Excellent</span>
+                        </div>
+                        <div class="score-metric-body">
+                            <div class="radial-score" id="atsScoreRadial">
+                                <span class="score-val" id="atsScoreValue">85</span>
+                                <span class="score-max">/100</span>
+                            </div>
+                            <div class="score-desc">
+                                <p id="atsScoreExplanationText">Calculated from 9 transparent structural checks including extractability, section headings, and contact fields.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 2: Role Suitability -->
+                    <div class="score-card">
+                        <div class="score-card-header">
+                            <div>
+                                <h3>Role Suitability</h3>
+                                <p>Relevance to Target Role</p>
+                            </div>
+                            <span class="score-badge-status" id="roleStatusBadge">High Fit</span>
+                        </div>
+                        <div class="score-metric-body">
+                            <div class="radial-score" id="roleScoreRadial">
+                                <span class="score-val" id="roleScoreValue">80</span>
+                                <span class="score-max">/100</span>
+                            </div>
+                            <div class="score-breakdown-bars">
+                                <div class="breakdown-bar-item">
+                                    <div class="bar-label">
+                                        <span>Required Skills Match</span>
+                                        <strong id="barSkillsText">40 / 50</strong>
+                                    </div>
+                                    <div class="bar-track"><div class="bar-fill" id="barSkillsFill" style="width: 80%;"></div></div>
+                                </div>
+                                <div class="breakdown-bar-item">
+                                    <div class="bar-label">
+                                        <span>Projects & Experience</span>
+                                        <strong id="barProjectsText">25 / 30</strong>
+                                    </div>
+                                    <div class="bar-track"><div class="bar-fill" id="barProjectsFill" style="width: 83%;"></div></div>
+                                </div>
+                                <div class="breakdown-bar-item">
+                                    <div class="bar-label">
+                                        <span>Qualifications & Certifications</span>
+                                        <strong id="barQualText">15 / 20</strong>
+                                    </div>
+                                    <div class="bar-track"><div class="bar-fill" id="barQualFill" style="width: 75%;"></div></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Disclaimer Banner -->
+                <div class="disclaimer-banner">
+                    <i class="fa-solid fa-circle-info"></i>
+                    <span><strong>Application Disclaimer:</strong> These scores and observations are estimated rule-based guidelines designed to help students format resumes and identify keyword alignment. They are not official hiring guarantees or predictive of all proprietary employer ATS systems.</span>
+                </div>
+            </div>
+
+            <!-- Tab Navigation for Results View -->
+            <div class="dashboard-tabs">
+                <button class="tab-btn active" data-tab="tab-overview"><i class="fa-solid fa-gauge"></i> Overview & Sections</button>
+                <button class="tab-btn" data-tab="tab-skills"><i class="fa-solid fa-tags"></i> Skill Analysis & Gaps</button>
+                <button class="tab-btn" data-tab="tab-checklist"><i class="fa-solid fa-list-check"></i> ATS Checklist (9 Rules)</button>
+                <button class="tab-btn" data-tab="tab-guidance"><i class="fa-solid fa-compass"></i> Career Guidance & Projects</button>
+            </div>
+
+            <!-- Tab 1: Overview & Sections -->
+            <div class="tab-pane active" id="tab-overview">
+                <div class="grid-2-col">
+                    <!-- Contact Details Card -->
+                    <div class="card">
+                        <div class="card-title">
+                            <h3><i class="fa-solid fa-address-card"></i> Detected Contact Information</h3>
+                        </div>
+                        <ul class="contact-list" id="contactInfoList">
+                            <!-- Injected dynamically -->
+                        </ul>
+                    </div>
+
+                    <!-- Detected Resume Sections Card -->
+                    <div class="card">
+                        <div class="card-title">
+                            <h3><i class="fa-solid fa-table-list"></i> Resume Structure & Sections</h3>
+                        </div>
+                        <div class="sections-grid" id="detectedSectionsContainer">
+                            <!-- Injected dynamically -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tab 2: Skill Analysis & Gaps -->
+            <div class="tab-pane" id="tab-skills">
+                <div class="skills-dashboard">
+                    <!-- Matched Skills -->
+                    <div class="card mb-4">
+                        <div class="card-title">
+                            <h3 class="text-success"><i class="fa-solid fa-circle-check"></i> Relevant Skills Matched to Role (<span id="matchedSkillsCount">0</span>)</h3>
+                        </div>
+                        <p class="card-subtitle">These competencies were detected in your resume and align with the target job profile.</p>
+                        <div class="skill-tags-container" id="matchedSkillsContainer">
+                            <!-- Injected dynamically -->
+                        </div>
+                    </div>
+
+                    <!-- Skills Not Detected -->
+                    <div class="card mb-4">
+                        <div class="card-title">
+                            <h3 class="text-warning"><i class="fa-solid fa-circle-exclamation"></i> Important Role Skills Not Detected (<span id="missingSkillsCount">0</span>)</h3>
+                        </div>
+                        <p class="card-subtitle">These key skills were not found in your resume. Note: If you have experience in these, consider explicitly mentioning them using standard industry terminology.</p>
+                        <div class="skill-tags-container" id="missingSkillsContainer">
+                            <!-- Injected dynamically -->
+                        </div>
+                    </div>
+
+                    <!-- All Detected Skills in Resume -->
+                    <div class="card">
+                        <div class="card-title">
+                            <h3><i class="fa-solid fa-boxes-stacked"></i> All Technical Skills Identified in Resume (<span id="allSkillsCount">0</span>)</h3>
+                        </div>
+                        <div class="skill-tags-container" id="allDetectedSkillsContainer">
+                            <!-- Injected dynamically -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tab 3: ATS Checklist (9 Rules) -->
+            <div class="tab-pane" id="tab-checklist">
+                <div class="card">
+                    <div class="card-title">
+                        <h3><i class="fa-solid fa-list-check"></i> ATS Compatibility Checklist (100 Points Total)</h3>
+                    </div>
+                    <p class="card-subtitle">Detailed breakdown of each rule checked against standard resume formatting practices.</p>
+                    <div class="checklist-items" id="atsChecklistContainer">
+                        <!-- Injected dynamically -->
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tab 4: Career Guidance & Projects -->
+            <div class="tab-pane" id="tab-guidance">
+                <!-- Recommended Projects -->
+                <div class="card mb-4">
+                    <div class="card-title">
+                        <h3><i class="fa-solid fa-diagram-project"></i> Portfolio Projects to Bridge Identified Gaps</h3>
+                    </div>
+                    <p class="card-subtitle">Hands-on, portfolio-ready project concepts designed to demonstrate the skills missing from your resume.</p>
+                    <div class="projects-grid" id="recommendedProjectsContainer">
+                        <!-- Injected dynamically -->
+                    </div>
+                </div>
+
+                <!-- Recommended Verified Certifications & Courses -->
+                <div class="card mb-4">
+                    <div class="card-title">
+                        <h3><i class="fa-solid fa-award"></i> Verified Certifications & Learning Resources</h3>
+                    </div>
+                    <p class="card-subtitle">Authentic industry programs and accredited free tutorials with direct links. Distinctly labeled by credential type and cost.</p>
+                    <div class="certs-grid" id="recommendedCertsContainer">
+                        <!-- Injected dynamically -->
+                    </div>
+                </div>
+
+                <!-- Actionable Resume Writing Improvements -->
+                <div class="card">
+                    <div class="card-title">
+                        <h3><i class="fa-solid fa-pen-fancy"></i> Actionable Resume Improvement Suggestions</h3>
+                    </div>
+                    <p class="card-subtitle">Practical adjustments you can make to your resume text and formatting today.</p>
+                    <ul class="suggestions-list" id="resumeSuggestionsList">
+                        <!-- Injected dynamically -->
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-col">
+                <div class="footer-brand">
+                    <span class="brand-icon"><i class="fa-solid fa-file-shield"></i></span>
+                    <span class="brand-text">ATS<strong>Insight</strong></span>
+                </div>
+                <p>An educational resume analysis and career guidance platform built with Spring Boot, Java 17, and Apache PDFBox.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Core Capabilities</h4>
+                <ul>
+                    <li>PDFBox Text Extraction</li>
+                    <li>9-Rule ATS Formatting Check</li>
+                    <li>Transparent 100-Point Scoring</li>
+                    <li>Role Skill Gap Analysis</li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Supported Roles</h4>
+                <ul>
+                    <li>Java Developer</li>
+                    <li>Frontend & Full Stack</li>
+                    <li>Python Developer</li>
+                    <li>Data Analyst & SWE</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 ATS-Friendly Resume Analyzer & Career Guidance System. Built for Java Internship Project.</p>
+        </div>
+    </footer>
+
+    <!-- Main JavaScript App -->
+    <script src="js/app.js"></script>
+</body>
+</html>
